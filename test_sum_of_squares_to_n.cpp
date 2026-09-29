@@ -4,9 +4,13 @@ using namespace std;
 
 int sum_of_squares_to_n(int n)
 {
-	return total
+	int total = 0;
 	while (n > 0)
-	
+	{
+		total = total + (n*n);
+		n--;
+	}
+	return total;
 }
 
 TEST_CASE("sum_of_squares_to_n(int n) sums squares from 1 to n") {
