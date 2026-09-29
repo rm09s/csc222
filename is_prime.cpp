@@ -4,16 +4,21 @@ using namespace std;
 
 bool is_prime(int n)
 {
+	if (n <= 1)
+	{
+		return false;
+	}
+
 	int lim = n - 1;
 	while (lim > 1)
 	{
 		if (n % lim == 0)
 			{
-				return true;
+				return false;
 			}
 		lim--;
 	}
-	return false;
+	return true;
 	
 }
 
