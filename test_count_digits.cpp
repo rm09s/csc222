@@ -7,13 +7,14 @@ int count_digits(int n)
 	int total = 0;
 	if ( n == 0)
 	{
-		return 1
+		return 1;
 	}
 	while (n%10 !=0 || n > 0)
 	{
 		total++;
 		n= n/10;
 	}
+	return total;
 }
 
 TEST_CASE("count_digits(int n) returns number of decimal digits in n") {
