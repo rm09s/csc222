@@ -11,7 +11,7 @@ int count_odd_digits(int n)
 	}
 	while (n>0)
 	{
-		if (n%10==0) { cnt++; }
+		if ( ((n%10)%2) != 0  ) { cnt++; }
 		n= n/10;
 	}
 	return cnt;
